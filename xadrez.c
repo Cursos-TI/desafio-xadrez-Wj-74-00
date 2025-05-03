@@ -1,32 +1,43 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+const int torre = 5, bispo = 5, rainha = 8; // Declaração das variáveis.
+int i, j;
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    printf("Movimeto da Torre: 5 casas para a direita.\n\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    i = 1;
+    while (i <= torre)// Estrutura de repetição para o movimento da Torre.
+    {
+        printf("Direita %d\n", i);
+        i++;
+    }
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    printf("\n");
+    
+    printf("Movimento do Bispo: 5 casas diagonal direita. \n\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    i = 1; 
+    do{ // Estrutura de repetição para o movimento do Bispo.
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+        printf("Cima, Direita %d\n", i);
+        i++;
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    } while (i <= bispo);
+
+    printf("\n");
+
+    printf("Movimento da Rainha: 8 casas para a esquerda.\n\n");
+    
+    i = 1;
+    // Estrutura de repetição para o movimento da Rainha.
+    for(i > 0; i <= rainha; i++)
+    {
+        printf("Esquerda %d\n", i);
+    };
+
+    printf("\n");
 
     return 0;
 }
